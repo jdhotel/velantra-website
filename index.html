@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experience premium luxury at Velora, a boutique hotel in Arakkonam, India. Featuring 18 elegant rooms, a signature restaurant, and a grand banquet hall. Book your stay today.">
+    <meta name="keywords" content="Velora Hotel, boutique hotel Arakkonam, luxury hotel Arakkonam, hotels near Chennai, banquet hall Arakkonam, restaurant Arakkonam, stay in Arakkonam">
+    <meta name="author" content="Velora Boutique Hotel">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.velorahotel.com/">
+    <meta property="og:title" content="Velora | Boutique Luxury Hotel in Arakkonam, India">
+    <meta property="og:description" content="Experience quiet luxury and warm hospitality. Featuring 18 boutique rooms, fine dining, and events banquet.">
+    <meta property="og:image" content="images/hero_lobby.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Velora | Boutique Luxury Hotel in Arakkonam, India">
+    <meta property="twitter:description" content="Experience quiet luxury and warm hospitality at Velora.">
+    <meta property="twitter:image" content="images/hero_lobby.jpg">
+
+    <title>Velora | Boutique Luxury Hotel in Arakkonam</title>
+    
+    <!-- Google Fonts: Playfair Display & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Schema.org JSON-LD structured data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LodgingBusiness",
+        "name": "Velora Boutique Hotel",
+        "image": [
+            "images/hero_lobby.jpg",
+            "images/standard_room.jpg",
+            "images/deluxe_room.jpg",
+            "images/suite_room.jpg",
+            "images/restaurant_dining.jpg",
+            "images/banquet_hall.jpg"
+        ],
+        "description": "Velora is a boutique luxury hotel in Arakkonam, Tamil Nadu, India, featuring 18 premium rooms, a 48-seat fine-dining restaurant, and a 150-seat banquet hall.",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "12, Gandhi Road, near Railway Station",
+            "addressLocality": "Arakkonam",
+            "addressRegion": "Tamil Nadu",
+            "postalCode": "631001",
+            "addressCountry": "IN"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "13.0878",
+            "longitude": "79.6688"
+        },
+        "telephone": "+914427660123",
+        "priceRange": "$$$",
+        "starRating": {
+            "@type": "Rating",
+            "ratingValue": "4.8",
+            "bestRating": "5"
+        },
+        "numberOfRooms": 18,
+        "amenityFeature": [
+            {
+                "@type": "LocationFeatureSpecification",
+                "name": "Free Wi-Fi",
+                "value": true
+            },
+            {
+                "@type": "LocationFeatureSpecification",
+                "name": "Air Conditioning",
+                "value": true
+            },
+            {
+                "@type": "LocationFeatureSpecification",
+                "name": "Fine Dining Restaurant",
+                "value": true
+            },
+            {
+                "@type": "LocationFeatureSpecification",
+                "name": "Banquet Hall",
+                "value": true
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="main-header" id="mainHeader">
+        <div class="header-container">
+            <a href="#" class="logo" id="headerLogo">
+                <span class="logo-v">V</span>ELORA
+            </a>
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#about" class="nav-link">The Hotel</a></li>
+                    <li><a href="#rooms" class="nav-link">Rooms</a></li>
+                    <li><a href="#dining" class="nav-link">Dining</a></li>
+                    <li><a href="#banquets" class="nav-link">Events</a></li>
+                    <li><a href="#attractions" class="nav-link">Attractions</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="#rooms" class="btn btn-primary btn-book" id="navBookBtn">Book Now</a>
+                <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle Navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="hero-bg-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-subtitle scroll-reveal">A Boutique Sanctuary in Arakkonam</span>
+            <h1 class="hero-title scroll-reveal">Where Quiet Luxury Meets Southern Warmth</h1>
+            <p class="hero-desc scroll-reveal">Indulge in a curated hospitality experience designed for travelers seeking refined design, custom service, and comforting elegance.</p>
+            <a href="#rooms" class="btn btn-outline scroll-reveal">Explore Our Spaces</a>
+        </div>
+        <div class="scroll-indicator" id="scrollIndicator">
+            <span>Scroll Down</span>
+            <svg class="chevron-down" viewBox="0 0 24 24" width="24" height="24">
+                <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" fill="currentColor"/>
+            </svg>
+        </div>
+
+        <!-- Sticky Quick Booking Bar -->
+        <div class="quick-booking-bar-wrapper">
+            <div class="quick-booking-bar container">
+                <form class="booking-form" id="quickBookingForm">
+                    <div class="form-group">
+                        <label for="checkin">Check-In</label>
+                        <input type="date" id="checkin" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="checkout">Check-Out</label>
+                        <input type="date" id="checkout" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="room-type">Room Type</label>
+                        <select id="room-type">
+                            <option value="standard">Standard</option>
+                            <option value="deluxe">Deluxe</option>
+                            <option value="super-deluxe">Super Deluxe</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Guests</label>
+                        <select id="guests">
+                            <option value="1">1 Guest</option>
+                            <option value="2" selected>2 Guests</option>
+                            <option value="3">3 Guests</option>
+                            <option value="4">4 Guests</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-accent btn-check-avail">Check Availability</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Welcome / About Section -->
+    <section class="about-section section-padding" id="about">
+        <div class="container grid grid-2-col">
+            <div class="about-text-column">
+                <span class="section-tagline">Welcome to Velora</span>
+                <h2 class="section-title">An Intimate Escape Crafted with Detail</h2>
+                <p class="about-lead">Velora is Arakkonam's premier luxury boutique destination, marrying contemporary European design with elements of local craft and architectural heritage.</p>
+                <p class="about-body">Conceived as an architectural haven, our hotel features just 18 carefully appointed guest rooms to maintain an atmosphere of exclusive privacy. We cater to the discerning business guest visiting the Arakkonam industrial hubs, as well as cultural travelers exploring the historic temples of Northern Tamil Nadu. Here, every detail is choregraphed—from the warm Russet Tan accents to the custom culinary creations in our bistro.</p>
+                <div class="hotel-stats">
+                    <div class="stat-item">
+                        <span class="stat-num">18</span>
+                        <span class="stat-label">Boutique Rooms</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">48</span>
+                        <span class="stat-label">Bistro Seats</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">150</span>
+                        <span class="stat-label">Banquet Capacity</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-visual-column">
+                <div class="visual-stack">
+                    <div class="img-frame-main">
+                        <img src="images/hero_lobby.jpg" alt="Velora Lobby Area" class="lazy-load">
+                    </div>
+                    <div class="img-frame-sub">
+                        <img src="images/restaurant_dining.jpg" alt="Velora Dining Ambience" class="lazy-load">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms Showcase Section -->
+    <section class="rooms-section section-padding bg-warm" id="rooms">
+        <div class="container text-center max-w-700">
+            <span class="section-tagline">Refined Accommodations</span>
+            <h2 class="section-title">Settle into Curated Comfort</h2>
+            <p class="section-subtitle">With only 18 rooms in our inventory, Velora ensures personalized butler hospitality, high-end amenities, and quiet seclusion.</p>
+        </div>
+
+        <div class="container rooms-grid">
+            <!-- Standard Room -->
+            <div class="room-card card-reveal">
+                <div class="room-image-wrapper">
+                    <img src="images/standard_room.jpg" alt="Standard Room" class="room-img">
+                    <div class="room-tag">Best Value</div>
+                </div>
+                <div class="room-details">
+                    <div class="room-meta">
+                        <span class="room-size">260 sq. ft.</span>
+                        <span class="room-capacity">2 Adults</span>
+                    </div>
+                    <h3 class="room-name">Standard</h3>
+                    <p class="room-desc">An elegant and functional space designed for modern professionals, featuring a plush queen-sized bed, a functional writing desk, and smart technology.</p>
+                    <ul class="room-amenities">
+                        <li>
+                            <svg viewBox="0 0 24 24" class="icon"><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M16.2,16.2L11,13V7H12.5V12.2L17,14.9L16.2,16.2Z" fill="currentColor"/></svg>
+                            <span>24/7 Room Service</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" class="icon"><path d="M12,3C17.5,3 22,7.5 22,13H20C20,8.6 16.4,5 12,5C7.6,5 4,8.6 4,13H2C2,7.5 6.5,3 12,3M12,7C15.3,7 18,9.7 18,13H16C16,10.8 14.2,9 12,9C9.8,9 8,10.8 8,13H6C6,9.7 8.7,7 12,7M12,11C13.1,11 14,11.9 14,13H10C10,11.9 10.9,11 12,11Z" fill="currentColor"/></svg>
+                            <span>High-speed Wi-Fi</span>
+                        </li>
+                    </ul>
+                    <div class="room-footer">
+                        <button class="btn btn-accent btn-book-room btn-block" data-room="standard">Book Room</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Deluxe Room -->
+            <div class="room-card card-reveal">
+                <div class="room-image-wrapper">
+                    <img src="images/deluxe_room.jpg" alt="Deluxe Room" class="room-img">
+                    <div class="room-tag">Popular Choice</div>
+                </div>
+                <div class="room-details">
+                    <div class="room-meta">
+                        <span class="room-size">380 sq. ft.</span>
+                        <span class="room-capacity">2 Adults, 1 Child</span>
+                    </div>
+                    <h3 class="room-name">Deluxe</h3>
+                    <p class="room-desc">Spacious and light-filled, containing a luxurious king-sized bed, comfortable lounge armchair, smart television, and dynamic views of the city skyline.</p>
+                    <ul class="room-amenities">
+                        <li>
+                            <svg viewBox="0 0 24 24" class="icon"><path d="M2,21H22V19H2V21M20,8H4V17H20V8M20,6A2,2 0 0,1 22,8V17A2,2 0 0,1 20,19H4A2,2 0 0,1 2,17V8A2,2 0 0,1 4,6H10V5H8V3H16V5H14V6H20M12,5H10V6H12V5Z" fill="currentColor"/></svg>
+                            <span>Mini Bar</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" class="icon"><path d="M12,3C17.5,3 22,7.5 22,13H20C20,8.6 16.4,5 12,5C7.6,5 4,8.6 4,13H2C2,7.5 6.5,3 12,3M12,7C15.3,7 18,9.7 18,13H16C16,10.8 14.2,9 12,9C9.8,9 8,10.8 8,13H6C6,9.7 8.7,7 12,7M12,11C13.1,11 14,11.9 14,13H10C10,11.9 10.9,11 12,11Z" fill="currentColor"/></svg>
+                            <span>High-speed Wi-Fi</span>
+                        </li>
+                    </ul>
+                    <div class="room-footer">
+                        <button class="btn btn-accent btn-book-room btn-block" data-room="deluxe">Book Room</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Super Deluxe Room -->
+            <div class="room-card card-reveal">
+                <div class="room-image-wrapper">
+                    <img src="images/suite_room.jpg" alt="Super Deluxe Room" class="room-img">
+                    <div class="room-tag">Pure Luxury</div>
+                </div>
+                <div class="room-details">
+                    <div class="room-meta">
+                        <span class="room-size">580 sq. ft.</span>
+                        <span class="room-capacity">3 Adults</span>
+                    </div>
+                    <h3 class="room-name">Super Deluxe</h3>
+                    <p class="room-desc">The ultimate expression of Velora luxury. Offers an open-plan layout with a separate living room, plush velvet sofas, walk-in closet, and premium services.</p>
+                    <ul class="room-amenities">
+                        <li>
+                            <svg viewBox="0 0 24 24" class="icon"><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M11,6V11H6V13H11V18H13V13H18V11H13V6H11Z" fill="currentColor"/></svg>
+                            <span>Butler Service</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" class="icon"><path d="M2,21H22V19H2V21M20,8H4V17H20V8M20,6A2,2 0 0,1 22,8V17A2,2 0 0,1 20,19H4A2,2 0 0,1 2,17V8A2,2 0 0,1 4,6H10V5H8V3H16V5H14V6H20M12,5H10V6H12V5Z" fill="currentColor"/></svg>
+                            <span>Complimentary Minibar</span>
+                        </li>
+                    </ul>
+                    <div class="room-footer">
+                        <button class="btn btn-accent btn-book-room btn-block" data-room="super-deluxe">Book Room</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dining Section -->
+    <section class="dining-section section-padding" id="dining">
+        <div class="container grid grid-2-col-reverse align-center">
+            <div class="dining-visual scroll-reveal-left">
+                <div class="img-frame-single">
+                    <img src="images/restaurant_dining.jpg" alt="Dining Room at Velora" class="full-img">
+                </div>
+            </div>
+            <div class="dining-text scroll-reveal-right">
+                <span class="section-tagline">Gastronomy & Ambience</span>
+                <h2 class="section-title">The Russet Bistro</h2>
+                <p class="dining-lead">A 48-seat boutique dining space serving handcrafted flavors that satisfy both global and traditional South Indian palates.</p>
+                <p class="dining-body">The Russet Bistro offers an intimate fine dining experience in Arakkonam. Our culinary team focuses on locally sourced produce, artisanal spices, and creative recipes. From rich morning filter coffee and fluffy idlis to masterfully executed continental main courses and tandoori classics, dining here is a sensory journey set against warm, textured interior walls and soft accent lighting.</p>
+                
+                <div class="dining-details">
+                    <div class="detail-pill">
+                        <strong>Seating:</strong> 48 Seats
+                    </div>
+                    <div class="detail-pill">
+                        <strong>Hours:</strong> 7:00 AM – 11:00 PM
+                    </div>
+                </div>
+
+                <div class="dining-action">
+                    <button class="btn btn-primary" id="openReserveTableBtn">Reserve a Table</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banquet & Event Section -->
+    <section class="banquets-section section-padding bg-dark text-white" id="banquets">
+        <div class="container grid grid-2-col align-center">
+            <div class="banquets-text scroll-reveal-left">
+                <span class="section-tagline gold-text">Milestones & Meetings</span>
+                <h2 class="section-title text-white">The Imperial Ballroom</h2>
+                <p class="banquet-lead">Host flawless celebrations and professional conventions in our versatile 150-seat premium banquet facility.</p>
+                <p class="banquet-body text-gray">Equipped with state-of-the-art audiovisual tech, customizable acoustics, and flexible stage layouts, The Imperial Ballroom is the top venue choice in Arakkonam. Our dedicated events team arranges theatrical seating, corporate board set-ups, or circular dinner alignments tailored to your exact needs. Choose from extensive custom menu options prepared by our bistro chefs.</p>
+                
+                <div class="banquet-layouts">
+                    <h4 class="layouts-title text-white">Capacity & Setup Configurations:</h4>
+                    <ul class="layouts-list">
+                        <li>
+                            <span class="layout-name">Theater Arrangement</span>
+                            <span class="layout-cap">150 Guests</span>
+                        </li>
+                        <li>
+                            <span class="layout-name">Banquet / Round Table</span>
+                            <span class="layout-cap">100 Guests</span>
+                        </li>
+                        <li>
+                            <span class="layout-name">U-Shape Meeting</span>
+                            <span class="layout-cap">60 Guests</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="banquets-action">
+                    <button class="btn btn-accent" id="openBanquetInquiryBtn">Inquire for Events</button>
+                </div>
+            </div>
+            <div class="banquets-visual scroll-reveal-right">
+                <div class="img-frame-single border-russet">
+                    <img src="images/banquet_hall.jpg" alt="The Imperial Ballroom Venue" class="full-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Attractions Section -->
+    <section class="attractions-section section-padding" id="attractions">
+        <div class="container text-center max-w-700">
+            <span class="section-tagline">Destination Guide</span>
+            <h2 class="section-title">Explore Around Arakkonam</h2>
+            <p class="section-subtitle">Velora is ideally positioned for business delegates and travelers wishing to explore key spiritual and cultural destinations in Tamil Nadu.</p>
+        </div>
+
+        <div class="container attractions-grid">
+            <div class="attraction-card">
+                <div class="attraction-meta">
+                    <span class="attraction-time">25 Mins Away</span>
+                </div>
+                <h3 class="attraction-title">Tiruttani Murugan Temple</h3>
+                <p class="attraction-desc">One of the six legendary sacred abodes (Arupadaiveedu) of Lord Murugan, perched beautifully atop a hill accessible by 365 stone steps or motorable road.</p>
+            </div>
+            <div class="attraction-card">
+                <div class="attraction-meta">
+                    <span class="attraction-time">35 Mins Away</span>
+                </div>
+                <h3 class="attraction-title">Sholinghur Narasimha Temple</h3>
+                <p class="attraction-desc">An ancient and spiritually revered hill temple dedicated to Yoga Narasimha Swamy, drawing thousands of devotees to its tranquil, scenic peak.</p>
+            </div>
+            <div class="attraction-card">
+                <div class="attraction-meta">
+                    <span class="attraction-time">45 Mins Away</span>
+                </div>
+                <h3 class="attraction-title">Kanchipuram Silk Town</h3>
+                <p class="attraction-desc">Known globally as the 'City of a Thousand Temples' and the home of exquisite handcrafted Kanchipuram silk sarees. A hub of ancient Pallava dynasty architecture.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section section-padding bg-warm" id="gallery">
+        <div class="container text-center">
+            <span class="section-tagline">Visual Journey</span>
+            <h2 class="section-title">Moments & Spaces</h2>
+            
+            <!-- Gallery Filters -->
+            <div class="gallery-filters" id="galleryFilters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="rooms">Rooms</button>
+                <button class="filter-btn" data-filter="dining">Dining</button>
+                <button class="filter-btn" data-filter="events">Events</button>
+            </div>
+        </div>
+
+        <div class="container-fluid gallery-grid" id="galleryGrid">
+            <div class="gallery-item" data-category="rooms">
+                <img src="images/standard_room.jpg" alt="Velora Cozy Standard Room" class="gallery-img">
+                <div class="gallery-overlay">
+                    <span class="gallery-cat">Rooms</span>
+                    <h4 class="gallery-title">Standard</h4>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="rooms">
+                <img src="images/deluxe_room.jpg" alt="Velora Deluxe Room Interors" class="gallery-img">
+                <div class="gallery-overlay">
+                    <span class="gallery-cat">Rooms</span>
+                    <h4 class="gallery-title">Deluxe</h4>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="rooms">
+                <img src="images/suite_room.jpg" alt="Velora Super Deluxe Room" class="gallery-img">
+                <div class="gallery-overlay">
+                    <span class="gallery-cat">Rooms</span>
+                    <h4 class="gallery-title">Super Deluxe</h4>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="dining">
+                <img src="images/restaurant_dining.jpg" alt="The Russet Bistro Table Layout" class="gallery-img">
+                <div class="gallery-overlay">
+                    <span class="gallery-cat">Dining</span>
+                    <h4 class="gallery-title">The Russet Bistro</h4>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="events">
+                <img src="images/banquet_hall.jpg" alt="The Imperial Ballroom Banquets" class="gallery-img">
+                <div class="gallery-overlay">
+                    <span class="gallery-cat">Events</span>
+                    <h4 class="gallery-title">The Imperial Ballroom</h4>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="rooms">
+                <img src="images/hero_lobby.jpg" alt="Velora Main Lobby and Lounge" class="gallery-img">
+                <div class="gallery-overlay">
+                    <span class="gallery-cat">Exterior & Lobby</span>
+                    <h4 class="gallery-title">Lobby Lounge</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section section-padding" id="reviews">
+        <div class="container text-center max-w-700">
+            <span class="section-tagline">Guest Testimonials</span>
+            <h2 class="section-title">What Our Guests Share</h2>
+        </div>
+
+        <div class="container testimonial-slider-container">
+            <div class="testimonial-slider" id="testimonialSlider">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card active">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"Velora exceeded all our expectations during our corporate event. The Imperial Ballroom was set up beautifully, and the catering from The Russet Bistro was fantastic. The rooms are clean, well-lit, and very comfortable."</p>
+                    <div class="guest-info">
+                        <span class="guest-name">Rajesh Kumar</span>
+                        <span class="guest-role">Event Organizer, Chennai</span>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"An absolute gem in Arakkonam! The design is stunning and quiet. The Deluxe room was spacious with premium amenities. We loved the boutique feel and the highly attentive staff."</p>
+                    <div class="guest-info">
+                        <span class="guest-name">Meera Sen</span>
+                        <span class="guest-role">Leisure Traveler</span>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"Excellent stay during a business trip. Standard room was clean, desk setup was perfect for work, and the Wi-Fi was fast and reliable. The bistro serves incredible filter coffee."</p>
+                    <div class="guest-info">
+                        <span class="guest-name">Ananth Krishnan</span>
+                        <span class="guest-role">Software Architect</span>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="slider-dot active" data-index="0" aria-label="Review slide 1"></button>
+                <button class="slider-dot" data-index="1" aria-label="Review slide 2"></button>
+                <button class="slider-dot" data-index="2" aria-label="Review slide 3"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Location Section -->
+    <section class="contact-section section-padding bg-dark text-white" id="contact">
+        <div class="container grid grid-2-col">
+            <div class="contact-info scroll-reveal-left">
+                <span class="section-tagline gold-text">Get In Touch</span>
+                <h2 class="section-title text-white">We'd Love To Hear From You</h2>
+                <p class="contact-desc text-gray">Whether you want to book a room, reserve a dining table, or plan a celebration in our ballroom, our boutique team is ready to assist.</p>
+                
+                <ul class="contact-details-list">
+                    <li>
+                        <div class="contact-icon-wrapper">
+                            <svg viewBox="0 0 24 24"><path d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z" fill="currentColor"/></svg>
+                        </div>
+                        <div>
+                            <h4>Our Address</h4>
+                            <p class="text-gray">12, Gandhi Road, near Railway Station,<br>Arakkonam, Tamil Nadu, India - 631001</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="contact-icon-wrapper">
+                            <svg viewBox="0 0 24 24"><path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z" fill="currentColor"/></svg>
+                        </div>
+                        <div>
+                            <h4>Phone & Email</h4>
+                            <p class="text-gray">
+                                Tel: +91 44 2766 0123<br>
+                                Email: reservations@velorahotel.com
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- Visual Custom Styled Mock Map -->
+                <div class="mock-map">
+                    <div class="map-overlay">
+                        <span class="map-label">Velora Boutique Hotel</span>
+                        <span class="map-sub">Arakkonam Junction - 500m</span>
+                        <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="map-link">Open in Google Maps</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-column scroll-reveal-right">
+                <div class="contact-form-card">
+                    <h3 class="form-card-title">Send a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group-row">
+                            <div class="form-input-group">
+                                <label for="contact-name">Full Name</label>
+                                <input type="text" id="contact-name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-input-group">
+                                <label for="contact-email">Email Address</label>
+                                <input type="email" id="contact-email" placeholder="john@example.com" required>
+                            </div>
+                        </div>
+                        <div class="form-input-group">
+                            <label for="contact-phone">Phone Number</label>
+                            <input type="tel" id="contact-phone" placeholder="+91 98765 43210" required>
+                        </div>
+                        <div class="form-input-group">
+                            <label for="contact-subject">Subject</label>
+                            <select id="contact-subject">
+                                <option value="general">General Inquiry</option>
+                                <option value="room">Room Reservation Query</option>
+                                <option value="dining">Bistro Table Booking</option>
+                                <option value="banquet">Banquet Hall Inquiry</option>
+                            </select>
+                        </div>
+                        <div class="form-input-group">
+                            <label for="contact-message">Your Message</label>
+                            <textarea id="contact-message" rows="5" placeholder="How can we assist you?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-accent btn-block">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo footer-logo"><span class="logo-v">V</span>ELORA</a>
+                <p class="brand-tagline text-gray">Boutique luxury defined by design, craft, and personalized care. Nestled in Arakkonam, Tamil Nadu.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#about">The Hotel</a></li>
+                    <li><a href="#rooms">Our Rooms</a></li>
+                    <li><a href="#dining">The Russet Bistro</a></li>
+                    <li><a href="#banquets">Imperial Ballroom</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="#attractions">Nearby Attractions</a></li>
+                    <li><a href="#gallery">Media Gallery</a></li>
+                    <li><a href="#reviews">Guest Reviews</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h4>Newsletter</h4>
+                <p class="newsletter-text text-gray">Subscribe to receive exclusive boutique experiences and updates.</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Your Email Address" required aria-label="Email address for newsletter">
+                    <button type="submit" aria-label="Subscribe to newsletter">
+                        <svg viewBox="0 0 24 24" width="20" height="20"><path d="M4,4H20A2,2 0 0,1 22,6V18A2,2 0 0,1 20,20H4C2.89,20 2,19.1 2,18V6C2,4.89 2.89,4 4,4M12,11L20,6H4L12,11M4,18H20V8L12,13L4,8V18Z" fill="currentColor"/></svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p class="copyright">&copy; 2026 Velora Boutique Hotel. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- LIGHTBOX MODAL FOR GALLERY -->
+    <div class="lightbox" id="galleryLightbox">
+        <span class="lightbox-close" id="lightboxClose">&times;</span>
+        <div class="lightbox-content">
+            <img src="" alt="Enlarged gallery view" id="lightboxImg">
+            <div class="lightbox-caption" id="lightboxCaption">Caption text</div>
+        </div>
+    </div>
+
+    <!-- BOOKING MODAL -->
+    <div class="modal" id="bookingModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Complete Your Booking</h3>
+                    <button class="modal-close" id="bookingModalClose">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="booking-summary-box">
+                        <h4>Reservation Summary</h4>
+                        <div class="summary-details">
+                            <p><strong>Room Type:</strong> <span id="summary-room">Standard</span></p>
+                            <p><strong>Check-In:</strong> <span id="summary-in">2026-08-10</span></p>
+                            <p><strong>Check-Out:</strong> <span id="summary-out">2026-08-12</span></p>
+                            <p><strong>Nights:</strong> <span id="summary-nights">2</span></p>
+                            <p><strong>Guests:</strong> <span id="summary-guests">2</span></p>
+                        </div>
+                    </div>
+                    <form class="modal-form" id="bookingConfirmForm">
+                        <div class="form-group-row">
+                            <div class="form-input-group">
+                                <label for="book-fname">First Name</label>
+                                <input type="text" id="book-fname" required>
+                            </div>
+                            <div class="form-input-group">
+                                <label for="book-lname">Last Name</label>
+                                <input type="text" id="book-lname" required>
+                            </div>
+                        </div>
+                        <div class="form-group-row">
+                            <div class="form-input-group">
+                                <label for="book-email">Email Address</label>
+                                <input type="email" id="book-email" required>
+                            </div>
+                            <div class="form-input-group">
+                                <label for="book-phone">Phone Number</label>
+                                <input type="tel" id="book-phone" required>
+                            </div>
+                        </div>
+                        <div class="form-input-group">
+                            <label for="book-requests">Special Requests (Optional)</label>
+                            <textarea id="book-requests" rows="3" placeholder="Late arrival, extra pillows, food allergies, etc."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-accent btn-block">Confirm Reservation</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DINING RESERVATION MODAL -->
+    <div class="modal" id="diningModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Reserve a Table</h3>
+                    <button class="modal-close" id="diningModalClose">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p class="modal-subtext">The Russet Bistro (48 seats). We recommend reserving tables at least 2 hours in advance.</p>
+                    <form class="modal-form" id="diningConfirmForm">
+                        <div class="form-group-row">
+                            <div class="form-input-group">
+                                <label for="dine-date">Date</label>
+                                <input type="date" id="dine-date" required>
+                            </div>
+                            <div class="form-input-group">
+                                <label for="dine-time">Time</label>
+                                <select id="dine-time" required>
+                                    <option value="12:30">12:30 PM (Lunch)</option>
+                                    <option value="13:30">01:30 PM (Lunch)</option>
+                                    <option value="19:30" selected>07:30 PM (Dinner)</option>
+                                    <option value="20:30">08:30 PM (Dinner)</option>
+                                    <option value="21:30">09:30 PM (Dinner)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group-row">
+                            <div class="form-input-group">
+                                <label for="dine-guests">Guests</label>
+                                <select id="dine-guests" required>
+                                    <option value="1">1 Person</option>
+                                    <option value="2" selected>2 People</option>
+                                    <option value="4">4 People</option>
+                                    <option value="6">6 People</option>
+                                    <option value="8">8 People (Max)</option>
+                                </select>
+                            </div>
+                            <div class="form-input-group">
+                                <label for="dine-meal">Meal Preference</label>
+                                <select id="dine-meal">
+                                    <option value="veg">Vegetarian</option>
+                                    <option value="nonveg">Non-Vegetarian</option>
+                                    <option value="both" selected>No Preference</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group-row">
+                            <div class="form-input-group">
+                                <label for="dine-name">Name</label>
+                                <input type="text" id="dine-name" required>
+                            </div>
+                            <div class="form-input-group">
+                                <label for="dine-phone">Phone Number</label>
+                                <input type="tel" id="dine-phone" required>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-accent btn-block">Book Table</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BANQUET INQUIRY MODAL -->
+    <div class="modal" id="banquetModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Inquire About The Imperial Ballroom</h3>
+                    <button class="modal-close" id="banquetModalClose">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p class="modal-subtext">The Imperial Ballroom capacity is 150. Fill in the details below to receive a custom quotation from our banquet team.</p>
+                    <form class="modal-form" id="banquetConfirmForm">
+                        <div class="form-group-row">
+                            <div class="form-input-group">
+                                <label for="bq-date">Event Date</label>
+                                <input type="date" id="bq-date" required>
+                            </div>
+                            <div class="form-input-group">
+                                <label for="bq-type">Event Type</label>
+                                <select id="bq-type" required>
+                                    <option value="corporate">Corporate Conference</option>
+                                    <option value="wedding">Wedding / Engagement</option>
+                                    <option value="social">Social Celebration / Birthday</option>
+                                    <option value="other">Other Event</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group-row">
+                            <div class="form-input-group">
+                                <label for="bq-guests">Estimated Guests</label>
+                                <select id="bq-guests" required>
+                                    <option value="under50">Under 50 Guests</option>
+                                    <option value="50-100" selected>50 - 100 Guests</option>
+                                    <option value="100-150">100 - 150 Guests</option>
+                                </select>
+                            </div>
+                            <div class="form-input-group">
+                                <label for="bq-setup">Required Setup</label>
+                                <select id="bq-setup">
+                                    <option value="theater">Theater Seating (Max 150)</option>
+                                    <option value="roundtable">Round Banquet Tables (Max 100)</option>
+                                    <option value="ushape">U-Shape Boardroom (Max 60)</option>
+                                    <option value="standing">Cocktail / Standing Reception (Max 150)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group-row">
+                            <div class="form-input-group">
+                                <label for="bq-name">Contact Person</label>
+                                <input type="text" id="bq-name" required>
+                            </div>
+                            <div class="form-input-group">
+                                <label for="bq-phone">Phone Number</label>
+                                <input type="tel" id="bq-phone" required>
+                            </div>
+                        </div>
+                        <div class="form-input-group">
+                            <label for="bq-email">Email Address</label>
+                            <input type="email" id="bq-email" required>
+                        </div>
+                        <div class="form-input-group">
+                            <label for="bq-reqs">Food, Beverage or AV Requirements</label>
+                            <textarea id="bq-reqs" rows="3" placeholder="Stage requirements, sound setup, lunch/dinner buffet choice, etc."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-accent btn-block">Submit Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOOKING CONFIRMATION SUCCESS TOAST -->
+    <div class="toast" id="toastNotification">
+        <div class="toast-body">
+            <span class="toast-title">Success</span>
+            <p class="toast-message">Your booking request has been successfully submitted.</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
