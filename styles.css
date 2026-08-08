@@ -590,6 +590,13 @@ h1, h2, h3, h4 {
     font-size: 16px;
     font-weight: 500;
     color: var(--color-text-dark);
+    border-bottom: 1px solid var(--color-border);
+    transition: border-color var(--transition-fast);
+}
+
+.booking-form input:focus,
+.booking-form select:focus {
+    border-color: var(--color-russet);
 }
 
 .booking-form input[type="date"] {
@@ -631,7 +638,16 @@ h1, h2, h3, h4 {
     }
     
     .hero-section {
-        height: 85vh;
+        height: auto;
+        min-height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 120px;
+        padding-bottom: 40px;
+    }
+    
+    .hero-content {
+        margin-bottom: 40px;
     }
     
     .scroll-indicator {
