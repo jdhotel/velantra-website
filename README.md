@@ -1,6 +1,6 @@
-# Puvora Boutique Hotel Website
+# Vilvora Boutique Hotel Website
 
-An elegant, premium, and fully responsive website designed for **Puvora**, a boutique luxury hotel located in Arakkonam, Tamil Nadu, India. 
+An elegant, premium, and fully responsive website designed for **Vilvora**, a boutique luxury hotel located in Arakkonam, Tamil Nadu, India. 
 
 The website has been styled with a warm neutral palette inspired by high-end hospitality brands like *The Park Hotels*, utilizing rich **Burnt Orange** accents, deep **Espresso Dark** backgrounds, and welcoming **Peach-Cream** tones.
 
