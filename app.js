@@ -1,5 +1,5 @@
 /* --------------------------------------------------
-   Vaigora Boutique Hotel - Client Application Script
+   Velantra Boutique Hotel - Client Application Script
 -------------------------------------------------- */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -336,14 +336,14 @@ document.addEventListener('DOMContentLoaded', () => {
     handleFormSubmit('bookingConfirmForm', 'bookingModal', 'Stay Booked', 'Your room reservation request has been processed. A booking voucher has been sent to your email.');
     handleFormSubmit('diningConfirmForm', 'diningModal', 'Table Reserved', 'Your table at The Russet Bistro has been reserved. A confirmation SMS has been sent.');
     handleFormSubmit('banquetConfirmForm', 'banquetModal', 'Inquiry Received', 'Thank you! Our event coordinator will contact you with details and a quote shortly.');
-    handleFormSubmit('contactForm', null, 'Message Sent', 'Thank you for reaching out. The Vaigora customer care desk will reply within 24 hours.');
+    handleFormSubmit('contactForm', null, 'Message Sent', 'Thank you for reaching out. The Velantra customer care desk will reply within 24 hours.');
     
     // Newsletter Submit
     const newsletterForm = document.getElementById('newsletterForm');
     if (newsletterForm) {
         newsletterForm.addEventListener('submit', (e) => {
             e.preventDefault();
-            showToast('Subscribed', 'Thank you for subscribing to Vaigora insights and promotions.');
+            showToast('Subscribed', 'Thank you for subscribing to Velantra insights and promotions.');
             newsletterForm.reset();
         });
     }
