@@ -111,7 +111,7 @@
                 </ul>
             </nav>
             <div class="header-actions">
-                <a href="#rooms" class="btn btn-primary btn-book" id="navBookBtn">Book Now</a>
+                <a href="https://bookingengine.stayflexi.com/?hotel_id=22615" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-book" id="navBookBtn">Book Now</a>
                 <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle Navigation menu">
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -137,39 +137,6 @@
             </svg>
         </div>
 
-        <!-- Sticky Quick Booking Bar -->
-        <div class="quick-booking-bar-wrapper">
-            <div class="quick-booking-bar container">
-                <form class="booking-form" id="quickBookingForm">
-                    <div class="form-group">
-                        <label for="checkin">Check-In</label>
-                        <input type="date" id="checkin" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="checkout">Check-Out</label>
-                        <input type="date" id="checkout" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="room-type">Room Type</label>
-                        <select id="room-type">
-                            <option value="standard">Standard</option>
-                            <option value="deluxe">Deluxe</option>
-                            <option value="super-deluxe">Super Deluxe</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="guests">Guests</label>
-                        <select id="guests">
-                            <option value="1">1 Guest</option>
-                            <option value="2" selected>2 Guests</option>
-                            <option value="3">3 Guests</option>
-                            <option value="4">4 Guests</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="btn btn-accent btn-check-avail">Check Availability</button>
-                </form>
-            </div>
-        </div>
     </section>
 
     <!-- Welcome / About Section -->
@@ -240,9 +207,6 @@
                             <span>High-speed Wi-Fi</span>
                         </li>
                     </ul>
-                    <div class="room-footer">
-                        <button class="btn btn-accent btn-book-room btn-block" data-room="standard">Book Room</button>
-                    </div>
                 </div>
             </div>
 
@@ -269,9 +233,6 @@
                             <span>High-speed Wi-Fi</span>
                         </li>
                     </ul>
-                    <div class="room-footer">
-                        <button class="btn btn-accent btn-book-room btn-block" data-room="deluxe">Book Room</button>
-                    </div>
                 </div>
             </div>
 
@@ -298,9 +259,6 @@
                             <span>Complimentary Minibar</span>
                         </li>
                     </ul>
-                    <div class="room-footer">
-                        <button class="btn btn-accent btn-book-room btn-block" data-room="super-deluxe">Book Room</button>
-                    </div>
                 </div>
             </div>
         </div>
@@ -645,57 +603,6 @@
         <div class="lightbox-content">
             <img src="" alt="Enlarged gallery view" id="lightboxImg">
             <div class="lightbox-caption" id="lightboxCaption">Caption text</div>
-        </div>
-    </div>
-
-    <!-- BOOKING MODAL -->
-    <div class="modal" id="bookingModal">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h3>Complete Your Booking</h3>
-                    <button class="modal-close" id="bookingModalClose">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <div class="booking-summary-box">
-                        <h4>Reservation Summary</h4>
-                        <div class="summary-details">
-                            <p><strong>Room Type:</strong> <span id="summary-room">Standard</span></p>
-                            <p><strong>Check-In:</strong> <span id="summary-in">2026-08-10</span></p>
-                            <p><strong>Check-Out:</strong> <span id="summary-out">2026-08-12</span></p>
-                            <p><strong>Nights:</strong> <span id="summary-nights">2</span></p>
-                            <p><strong>Guests:</strong> <span id="summary-guests">2</span></p>
-                        </div>
-                    </div>
-                    <form class="modal-form" id="bookingConfirmForm">
-                        <div class="form-group-row">
-                            <div class="form-input-group">
-                                <label for="book-fname">First Name</label>
-                                <input type="text" id="book-fname" required>
-                            </div>
-                            <div class="form-input-group">
-                                <label for="book-lname">Last Name</label>
-                                <input type="text" id="book-lname" required>
-                            </div>
-                        </div>
-                        <div class="form-group-row">
-                            <div class="form-input-group">
-                                <label for="book-email">Email Address</label>
-                                <input type="email" id="book-email" required>
-                            </div>
-                            <div class="form-input-group">
-                                <label for="book-phone">Phone Number</label>
-                                <input type="tel" id="book-phone" required>
-                            </div>
-                        </div>
-                        <div class="form-input-group">
-                            <label for="book-requests">Special Requests (Optional)</label>
-                            <textarea id="book-requests" rows="3" placeholder="Late arrival, extra pillows, food allergies, etc."></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-accent btn-block">Confirm Reservation</button>
-                    </form>
-                </div>
-            </div>
         </div>
     </div>
 
