@@ -70,6 +70,18 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', handleScroll);
     handleScroll(); // Trigger immediately to check initial state
 
+    // Smooth scroll for hero scroll indicator
+    const scrollIndicator = document.getElementById('scrollIndicator');
+    if (scrollIndicator) {
+        scrollIndicator.addEventListener('click', (e) => {
+            e.preventDefault();
+            const aboutSection = document.getElementById('about');
+            if (aboutSection) {
+                aboutSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    }
+
     /* ==================================================
        3. MOBILE NAVIGATION NAVIGATION
        ================================================== */
